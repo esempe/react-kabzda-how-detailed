@@ -1,0 +1,1 @@
+# react-kabzda-how-detailed
