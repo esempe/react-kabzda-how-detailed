@@ -1,0 +1,40 @@
+.on{
+    display: flex;
+    justify-content: center;
+    border: 1px solid green;
+    color: red;
+    height: 25px;
+    width: 150px;
+}
+.off{
+    display: flex;
+    justify-content: center;
+    border: 1px solid green;
+    color: red;
+    height: 25px;
+    width: 150px;
+}
+.indicator{
+    height: 24px;
+    width: 24px;
+    border: 1px solid black;
+    border-radius:50% ;
+}
+.switcherWrapper{
+    display: flex;
+    gap: 15px;
+}
+.active{
+    color:green;
+}
+.offed{
+    color: #b7b7b7;
+    background-color: #989898;
+}
+
+.indicatorON{
+    background-color: green;
+}
+.indicatorOFF{
+    background-color: red;
+}
