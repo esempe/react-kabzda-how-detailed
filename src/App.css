@@ -23,6 +23,7 @@
 .switcherWrapper{
     display: flex;
     gap: 15px;
+    margin-bottom: 25px;
 }
 .active{
     color:green;
