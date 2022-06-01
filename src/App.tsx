@@ -8,8 +8,8 @@ import {OnOffSwitcherV2} from "./components/onOffSwitcherV2";
 function App() {
     return (
         <div className="App">
-            <Accordion titleValue={'Menu'} collapsed={false}/>
-            <Accordion titleValue={'Users'} collapsed={false}/>
+            <Accordion titleValue={'Menu'} />
+            <Accordion titleValue={'Users'} />
             <OnOffSwitcher isOn={false}/>
             <OnOffSwitcherV2/>
             <OnOffSwitcherV2/>
