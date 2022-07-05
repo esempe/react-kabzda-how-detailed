@@ -1,0 +1,29 @@
+
+.item{
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+}
+.item:hover{
+    background-color: green;
+    transition: 0.5s;
+
+
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    position: relative;
+    border:1px solid green;
+    width: 150px;
+}
+.title{
+}
+.itemList{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border:1px solid green;
+}
