@@ -21,7 +21,6 @@ export const Select = (props: selectPropsType) => {
         setVisible(!isVisible)
     }
     const onBlurHandler = () => {
-        console.log('onBluur')
         setVisible(false)
     }
     const onItemClickHandler = (title: string) => {

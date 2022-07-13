@@ -1,16 +1,21 @@
-import React, {useState} from "react";
+import React, {useReducer, useState} from "react";
+import {reducer} from "./reducer";
 
 type AccordionPropsType = {
     titleValue: string,
    // collapsed: boolean
 }
 
+
 function Accordion(props: AccordionPropsType) {
     console.log('Accordion rendering')
 
-    let [isCollapsed, setCollapsed] = useState<boolean>(true)
+
+    //let [isCollapsed, setCollapsed] = useState<boolean>(true)
+    let [state, dispatch] = useReducer(reducer,{collapsed:false});
     const onClickHandler = () => {
-        (isCollapsed === true) ? setCollapsed(false) : setCollapsed(true)
+        //(isCollapsed === true) ? setCollapsed(false) : setCollapsed(true)
+        dispatch({type:"TOGGLE-COLLAPSED"})
     }
     let divStyle = {
         cursor:'pointer'
@@ -19,7 +24,7 @@ function Accordion(props: AccordionPropsType) {
     return(
         <div style={divStyle} onClick={onClickHandler}>
             <AccordionTitle title={props.titleValue}/>
-            { isCollapsed == true && <AccordionBody />}
+            { !state.collapsed == true && <AccordionBody />}
         </div>
     )
 

@@ -8,7 +8,6 @@ import {RatingV2} from "./components/RatingV2/RatingV2";
 import {AccordionV2} from "./components/AccordionV2/AccordionV2";
 import {Lesson12} from "./components/12lesson/Lesson12";
 import {Select} from "./components/selectCustom/Select";
-import {log} from "util";
 
 
 function App() {
@@ -33,7 +32,7 @@ function App() {
                 selectedItem={selectedItem}
                 setSelectedItem={setSelectItem}
                 items={itemsForAccordion} />
-            <Accordion titleValue={'Menu V1'} />
+            <Accordion titleValue={'bebra'} />
             <AccordionV2
                 onItemClick={()=>{
                     console.log('на итем нажали!!!')}}
