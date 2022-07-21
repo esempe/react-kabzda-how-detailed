@@ -4,7 +4,7 @@ type RatingPropsType = {
     value?: 0 | 1 | 2 | 3 | 4 | 5
 }
 
-export function RatingV2(props: RatingPropsType) {
+export function RatingV2Uncontroled(props: RatingPropsType) {
     console.log('Rating rendering')
     const [value,setValue] = useState<0 | 1 | 2 | 3 | 4 | 5>(1)
     const onClickValue = (value:0 | 1 | 2 | 3 | 4 | 5) => {

@@ -36,3 +36,5 @@ function Star(props: StarPropsType) {
     )
 
 }
+
+export const RatingContainer = React.memo(Rating)

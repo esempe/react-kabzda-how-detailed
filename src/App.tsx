@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Accordion from "./components/Accordion/Accordion";
-import {Rating} from "./components/Rating/Rating";
-import {OnOffSwitcher} from "./components/onOffSwitcher";
-import {OnOffSwitcherV2} from "./components/onOffSwitcherV2";
+import {Rating, RatingContainer, ratingValueType} from "./components/Rating/Rating";
+import {OnOffSwitcher} from "./components/on-of-Switcher/onOffSwitcher";
+import {OnOffSwitcherV2} from "./components/on-of-Switcher/onOffSwitcherV2";
+
 
 function App() {
+    const [rating,setRating] = useState<ratingValueType>(2)
     return (
         <div className="App">
             <Accordion titleValue={'Menu'} />
@@ -17,10 +19,10 @@ function App() {
             <OnOffSwitcherV2/>
             <OnOffSwitcherV2/>
 
-            <Rating value={1}/>
-            <Rating value={2}/>
-            <Rating value={3}/>
-            <Rating value={5}/>
+            <RatingContainer setRatingValue={setRating} value={rating}/>
+            <RatingContainer setRatingValue={setRating} value={rating}/>
+            <RatingContainer setRatingValue={setRating} value={rating}/>
+            <RatingContainer setRatingValue={setRating} value={rating}/>
 
         </div>
     );
